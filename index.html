@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Food Ordering System</h2>
+
+        <form>
+            <p><strong>Menu:</strong></p>
+            <label><input type="checkbox" id="2 Piece Fried Chicken" value="200"> 2 Piece Fried Chicken (₱200)</label><br>
+            <label><input type="checkbox" id="Bucket" value="600">Bucket (₱600)</label><br>
+            <label><input type="checkbox" id="Barbeque Crispy Fries" value="150">Barbeque Crispy Fries (₱150)</label><br>
+            <label><input type="checkbox" id="Milkshake" value="60">Milkshake (₱60)</label><br>
+            <label><input type="checkbox" id="Bottled Water" value="30">Bottled Water (₱30)</label><br><br>
+
+            <p><strong>Customer Details:</strong></p>
+            <input type="text" id="custom_name" placeholder="Enter Name"><br>
+            <input type="text" id="custom_address" placeholder="Enter Address"><br>
+            <input type="text" id="custom_contact" placeholder="Enter Contact number"><br>
+
+            <input type="button" py-click="create_order" value="Create Order" class="btn">
+        </form>
+
+        <div id="output" class="output-box"></div>
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
+</body>
+</html>
